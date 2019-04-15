@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="正在制作"
+            android:textColor="@color/yellow1"
+            android:textSize="50sp" />
+
+        <ListView
+            android:scrollbars="none"
+            android:id="@+id/lv_ready"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:divider="#00ffffff"
+            android:dividerHeight="1dp"
+            android:listSelector="#00ffffff" >
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/yellow1"
+            android:textSize="280sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_call"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:text="请取餐"
+            android:textColor="@color/yellow1"
+            android:textSize="100sp" />
+        <ListView
+            android:id="@+id/lv_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+        </ListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="制作完成"
+            android:textColor="@color/yellow1"
+            android:textSize="50sp" />
+
+        <ListView
+            android:scrollbars="none"
+            android:id="@+id/lv_done"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:divider="#00ffffff"
+            android:dividerHeight="1dp"
+            android:listSelector="#00ffffff" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

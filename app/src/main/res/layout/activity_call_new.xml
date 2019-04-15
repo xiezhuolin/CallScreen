@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="正在制作"
+            android:textColor="@color/yellow1"
+            android:textSize="50sp"/>
+
+        <GridView
+            android:id="@+id/lv_ready"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="20dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp">
+        </GridView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:textColor="@color/yellow1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:text="请取餐"
+            android:textColor="@color/yellow1"
+            android:textSize="80sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="制作完成"
+            android:textColor="@color/yellow1"
+            android:textSize="50sp"/>
+
+        <GridView
+            android:id="@+id/lv_done"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="20dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp">
+        </GridView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
